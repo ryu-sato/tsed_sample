@@ -12,7 +12,7 @@ generator client {
 
 model Employee {
   id          Int       @id @default(autoincrement())
-  gender      Boolean
+  gender      String?
   name        String?
   birthday    DateTime
   department  String?
