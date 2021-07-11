@@ -1,9 +1,7 @@
-import {Controller, Get, Post, Patch, PathParams, BodyParams } from "@tsed/common";
+import {Controller, Get, Post, Patch, Delete, PathParams, BodyParams } from "@tsed/common";
 import {Inject} from "@tsed/di";
 import { Groups,Summary, Returns } from "@tsed/schema";
 import { EmployeeModel } from "../../../models/EmployeeModel";
-// import {Employee} from "@prisma/client";
-
 import { PrismaService } from "../../../services/PrismaService";
 
 @Controller("/employees")
@@ -31,10 +29,18 @@ export class EmployeesCtrl {
     return this.prisma.employee.create({data: employee});
   }
 
+  // [TODO] 一部の attribute を更新できるようにする
   @Patch("/:id")
   @Summary("Update a employee")
-  @Returns(201, EmployeeModel)
+  @Returns(200, EmployeeModel)
   async update(@PathParams("id") id: number, @BodyParams() @Groups("creation") employee: EmployeeModel) {
     return this.prisma.employee.update({where: {id}, data: employee});
+  }
+
+  @Delete("/:id")
+  @Summary("Delete a employee")
+  @Returns(201, EmployeeModel)
+  async delete(@PathParams("id") id: number) {
+    return this.prisma.employee.delete({where: {id}});
   }
 }
