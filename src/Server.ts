@@ -17,8 +17,8 @@ import {IndexCtrl} from "./controllers/pages/IndexController";
   httpPort: process.env.PORT || 8083,
   httpsPort: false, // CHANGE
   mount: {
-    "/rest": [
-      `${rootDir}/controllers/**/*.ts`
+    "/rest/v1": [
+      `${rootDir}/controllers/v1/**/*.ts`
     ],
     "/": [IndexCtrl]
   },
