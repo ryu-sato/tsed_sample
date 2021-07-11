@@ -17,7 +17,6 @@ enum Genders {
 
 export class EmployeeModel {
   @Required()
-  @Groups("!creation")
   id: string;
 
   @Enum(Genders)
