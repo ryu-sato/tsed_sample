@@ -2,10 +2,20 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 generator client {
   provider = "prisma-client-js"
+}
+
+model Employee {
+  id          Int       @id @default(autoincrement())
+  gender      Boolean
+  name        String?
+  birthday    DateTime
+  department  String?
+  payment     Int
+  createdAt   DateTime  @default(now())
 }
