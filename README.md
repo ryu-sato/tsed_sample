@@ -1,8 +1,13 @@
 # tsed-sample
 
-> An awesome project based on Ts.ED framework
+Ts.ED を使って API (RESTful API) を実装したサンプルアプリケーション。
 
-See [Ts.ED](https://tsed.io) project for more information.
+API 実装のみであり特別なことはしていない。
+
+# 関連情報
+
+- [Ts.ED](https://tsed.io)
+
 
 ## Build setup
 
