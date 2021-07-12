@@ -3,10 +3,8 @@ import {
   Enum,
   Format,
   MaxLength,
-  Minimum,
   MinLength,
-  Required,
-  Groups
+  Required
 } from "@tsed/schema";
 
 enum Genders {
@@ -36,8 +34,7 @@ export class EmployeeModel {
   department: string;
 
   @Required()
-  @Minimum(0)
-  payment: Number = 0;
+  payment = +Number(0);
 
   @Format("date-time")
   @Default(Date.now)
