@@ -12,35 +12,35 @@ export class EmployeesCtrl {
 
   @Get("/")
   @(Returns(200, Array).Of(EmployeeModel))
-  async index() {
+  async index(): EmployeeModel {
     return this.prisma.employee.findMany();
   }
 
   @Get("/:id")
   @Summary("Return a employee by his id")
   @Returns(200, EmployeeModel)
-  async show(@PathParams("id") id: number) {
+  async show(@PathParams("id") id: number): EmployeeModel {
     return this.prisma.employee.findUnique({ where: { id } });
   }
 
   @Post("/")
   @Summary("Create a new employee")
   @Returns(201, EmployeeModel)
-  async create(@BodyParams() employee: Prisma.EmployeeCreateArgs) {
+  async create(@BodyParams() employee: Prisma.EmployeeCreateArgs): EmployeeModel {
     return this.prisma.employee.create({ data: employee });
   }
 
   @Patch("/:id")
   @Summary("Update a employee")
   @Returns(206, EmployeeModel)
-  async update(@PathParams("id") id: number, @BodyParams() employee: Prisma.EmployeeUpdateArgs) {
+  async update(@PathParams("id") id: number, @BodyParams() employee: Prisma.EmployeeUpdateArgs): EmployeeModel {
     return this.prisma.employee.update({ where: { id }, data: employee });
   }
 
   @Delete("/:id")
   @Summary("Delete a employee")
   @Returns(200, EmployeeModel)
-  async delete(@PathParams("id") id: number) {
+  async delete(@PathParams("id") id: number): EmployeeModel {
     return this.prisma.employee.delete({ where: { id } });
   }
 }
