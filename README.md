@@ -9,18 +9,26 @@ API 実装のみであり特別なことはしていない。
 - [Ts.ED](https://tsed.io)
 
 
-## Build setup
+# 開発スタートアップ
 
-> **Important!** Ts.ED requires Node >= 10, Express >= 4 and TypeScript >= 3.
+## 初回実行
+
+Node.js, npm, yarn を package.json の engines に併せてインストールする
 
 ```batch
 # install dependencies
 $ yarn install
 
+# Inisitalize DB schema
+$ yarn run prisma:migrate
+
 # serve
 $ yarn start
+```
 
-# build for production
+# 本番環境
+
+```batch
 $ yarn build
 $ yarn start:prod
 ```
