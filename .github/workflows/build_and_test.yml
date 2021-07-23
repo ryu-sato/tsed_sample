@@ -1,6 +1,4 @@
-on:
-  release:
-    types: [pushed]
+on: push
 
 env:
   NODE_VERSION: '14.x'                # set this to the node version to use
@@ -22,5 +20,5 @@ jobs:
         # deploy to Azure Web App.
         yarn install
         yarn run test:lint
-        yarn run build --if-present
-        yarn run test --if-present
+        yarn run build
+        yarn run test

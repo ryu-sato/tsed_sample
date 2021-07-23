@@ -3,11 +3,11 @@ import { PrismaClient } from "@prisma/client";
 
 @Injectable()
 export class PrismaService extends PrismaClient implements OnInit, OnDestroy {
-  async $onInit() {
+  async $onInit(): Promise<void> {
     await this.$connect();
   }
 
-  async $onDestroy() {
+  async $onDestroy(): Promise<void> {
     await this.$disconnect();
   }
 }
