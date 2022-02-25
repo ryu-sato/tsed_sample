@@ -1397,7 +1397,7 @@
   integrity sha512-844mIYCSQ2iHsNZ23ZvVKjl6GNSCWS7dEy8RJgEOldarbVExM0qNbQPHtp6cBB+o3o/bYzaKEaMrNMz9QJzEFg==
 
 "@tsed/platform-express@^6.59.3":
-  version "6.59.3"
+  version "6.59.3" 
   resolved "https://registry.yarnpkg.com/@tsed/platform-express/-/platform-express-6.59.3.tgz#accac3f4c0dd584afb95fb97f1d36a3225814ab0"
   integrity sha512-Mddy9Wim0bIbih/53nIVDQ3Z1Nm2LFrVW59T9KDibq5KNTSxG/mlBvVYqIcW5V5ZUs1/pRzMzNsgjNf52pTTLA==
   dependencies:
