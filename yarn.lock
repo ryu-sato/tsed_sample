@@ -1294,9 +1294,9 @@
   integrity sha512-FTgBI767POY/lKNDNbIzgAX6miIDBs6NTCbdlDb8TrWovHsSvaVIZDlTqym29C6UqhzwcJx4CYr+AlrMywA0cA==
 
 "@tsed/ajv@^6.59.3":
-  version "6.59.3"
-  resolved "https://registry.yarnpkg.com/@tsed/ajv/-/ajv-6.59.3.tgz#eb00adc5e7dc7ea51fa6f4ecab0d5768179eeb3a"
-  integrity sha512-Dwv/jKbQ74T9zGtioaPRD2I8A/8WllSQrv8pGhyuOJhKsLAi81TsC9N0fPDFJhRXFaU0gcRoB8lZzjs2If+47w==
+  version "6.103.2"
+  resolved "https://registry.yarnpkg.com/@tsed/ajv/-/ajv-6.103.2.tgz#be5c8875c1b4e615279e88dcecdc60fe0c907500"
+  integrity sha512-NQ5InQmrFG5GRIngfMngjs9XfuPySB/q2wB70910+HX3RcNfNR/WWh1aXWhmWmqLgGBLTOA+U/Af5ZF8Ee/M2w==
   dependencies:
     ajv-formats "1.5.1"
     tslib "2.2.0"
@@ -1397,7 +1397,7 @@
   integrity sha512-844mIYCSQ2iHsNZ23ZvVKjl6GNSCWS7dEy8RJgEOldarbVExM0qNbQPHtp6cBB+o3o/bYzaKEaMrNMz9QJzEFg==
 
 "@tsed/platform-express@^6.59.3":
-  version "6.59.3" 
+  version "6.59.3"
   resolved "https://registry.yarnpkg.com/@tsed/platform-express/-/platform-express-6.59.3.tgz#accac3f4c0dd584afb95fb97f1d36a3225814ab0"
   integrity sha512-Mddy9Wim0bIbih/53nIVDQ3Z1Nm2LFrVW59T9KDibq5KNTSxG/mlBvVYqIcW5V5ZUs1/pRzMzNsgjNf52pTTLA==
   dependencies:
