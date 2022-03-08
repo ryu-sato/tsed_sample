@@ -1397,9 +1397,9 @@
   integrity sha512-844mIYCSQ2iHsNZ23ZvVKjl6GNSCWS7dEy8RJgEOldarbVExM0qNbQPHtp6cBB+o3o/bYzaKEaMrNMz9QJzEFg==
 
 "@tsed/platform-express@^6.59.3":
-  version "6.59.3" 
-  resolved "https://registry.yarnpkg.com/@tsed/platform-express/-/platform-express-6.59.3.tgz#accac3f4c0dd584afb95fb97f1d36a3225814ab0"
-  integrity sha512-Mddy9Wim0bIbih/53nIVDQ3Z1Nm2LFrVW59T9KDibq5KNTSxG/mlBvVYqIcW5V5ZUs1/pRzMzNsgjNf52pTTLA==
+  version "6.105.1"
+  resolved "https://registry.yarnpkg.com/@tsed/platform-express/-/platform-express-6.105.1.tgz#3a0358443f1fa3c5a02bee5a39cf400590643e5c"
+  integrity sha512-fxdSf61Yk3geU5huzi06+0fYcm546TAIc83fFkRrnDPko5ccUfUd29vaJnXkru79Gt9DE3hjNEabdlBISoj7mQ==
   dependencies:
     express "^4.17.1"
     multer "^1.4.2"
